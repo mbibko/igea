@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igea | homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex justify-between items-center h-40">
+        <div class="chrumbs flex items-center">
+          <a href="/"
+            ><div
+              class="w-[175px] h-[71px] bg-[url('public/img/logo.png')] bg-cover"
+            ></div
+          ></a>
+          <div
+            class="mx-4 w-[26px] h-[50px] bg-[url('public/img/separator.png')] bg-cover"
+          ></div>
+          <div
+            class="icon bg-[url('public/img/book-cap.png')] size-[58px]"
+          ></div>
+          <div
+            class="icon bg-[url('public/img/catalogo-universita.png')] ml-3 w-[300px] h-[54px]"
+          ></div>
+        </div>
+        <div class="flex items-center">
+          <menu class="flex font-medium text-2xl text-gray-500">
+            <li class="mr-14 tracking-tight">
+              <a href="#">CORSI DI LAUREA ON-LINE</a>
+            </li>
+            <li class="mr-14 tracking-tight"><a href="#">MASTER ON-LINE</a></li>
+            <li class="mr-14 tracking-tight">
+              <a href="#">ALTRI CORSI IGEA</a>
+            </li>
+          </menu>
+          <a
+            href="#"
+            class="icon bg-[url('public/img/messendger.png')] block size-[44px]"
+          ></a>
+        </div>
+      </header>
+    </div>
+    <section
+      class="flex flex-col justify-center h-[813px] bg-[url('public/img/hero-1.png')] bg-cover bg-center"
+    >
+      <div class="mx-auto max-w-[1056px]">
+        <h1 class="text-white text-6xl text-center mb-20 font-light">
+          La migliore
+          <span class="font-semibold">formazione universitaria on-line</span>
+          con la chiarezza e l’affidabilità
+          <span class="font-semibold">IGEA</span>
+        </h1>
+        <form action="/">
+          <label for="search-field" class="sr-only"
+            >Cerca il tuo corso di laruera on-line</label
+          >
+          <div class="relative">
+            <input
+              id="search-field"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              class="sm:leading-20 placeholder:text-slate-500 block w-full rounded-xl border-0 bg-white px-4 py-7 shadow-md ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 xl:text-3xl"
+              placeholder="Cerca il tuo corso di laruera on-line"
+            />
+            <button
+              title="Cerca"
+              type="submit"
+              class="absolute right-5 top-1/2 -translate-y-1/2"
+            >
+              <svg
+                class="w-10 h-10 fill-red-600"
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+                width="800"
+                height="800"
+                viewBox="0 0 488.4 488.4"
+              >
+                <path
+                  d="M0 203.25c0 112.1 91.2 203.2 203.2 203.2 51.6 0 98.8-19.4 134.7-51.2l129.5 129.5c2.4 2.4 5.5 3.6 8.7 3.6s6.3-1.2 8.7-3.6c4.8-4.8 4.8-12.5 0-17.3l-129.6-129.5c31.8-35.9 51.2-83 51.2-134.7C406.4 91.15 315.2.05 203.2.05S0 91.15 0 203.25zm381.9 0c0 98.5-80.2 178.7-178.7 178.7s-178.7-80.2-178.7-178.7 80.2-178.7 178.7-178.7 178.7 80.1 178.7 178.7z"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="py-16 container max-w-[1050px] mb-10">
+      <h2 class="mb-24 text-4xl text-center">
+        Sfoglia il catalogo dei corsi on-line:
+      </h2>
+      <div
+        class="items-with-border text-xl text-center grid grid-cols-1 gap-x-8 sm:mt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+      >
+        <div class="relative flex flex-col items-center">
+          <img class="mb-6" src="public/img/cap.png" alt="" />
+          <span>CORSI DI LAUREA ON-LINE</span>
+        </div>
+        <div class="relative flex flex-col items-center">
+          <img class="mb-6" src="public/img/cert.png" alt="" />
+          <span>MASTER ON-LINE</span>
+        </div>
+        <div class="relative flex flex-col items-center">
+          <img class="mb-6" src="public/img/monitor.png" alt="" />
+          <span>ALTRI CORSI ON-LINE</span>
+        </div>
+      </div>
+    </section>
+    <div class="py-16 bg-slate-100">
+      <section class="container">
+        <div class="swiper max-w-[1510]">
+          <div class="swiper-wrapper pb-16">
+            {% for item in [{ title: "foo", id: 1 }, { title: "bar", id: 2},{
+            title: "foo", id: 3 }, { title: "bar", id: 4}, { title: "bar", id:
+            5}, { title: "bar", id: 6}] %}
+            <div class="swiper-slide">
+              <div
+                class="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md"
+              >
+                <img
+                  class="object-cover w-full h-64"
+                  src="public/img/slider/{{loop.index}}.png"
+                  alt="Article"
+                />
+
+                <div class="p-6">
+                  <div>
+                    <a
+                      href="#"
+                      class="block mt-2 mb-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform hover:text-gray-600 hover:underline"
+                      tabindex="0"
+                      role="link"
+                      >I Built A Successful Blog In One Year</a
+                    >
+                    <span class="flex text-xs font-medium uppercase mb-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="mr-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                        />
+                      </svg>
+                      Redasione
+                    </span>
+                    <span class="text-xs font-medium text-blue-600 uppercase"
+                      >Product</span
+                    >
+                    <p class="text-md mt-2 text-gray-600">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Molestie parturient et sem ipsum volutpat vel. Natoque sem
+                      et aliquam mauris egestas quam volutpat viverra. In
+                      pretium nec senectus erat. Et malesuada lobortis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

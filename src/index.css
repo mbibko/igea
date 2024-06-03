@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   font-family: "Bitter", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+ }
+
+.items-with-border > div::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80%;
+  top: 10%;
+  left: 0;
+  background-color: #bebebe;
+}
+.items-with-border > div:first-child::before {
+  display: none;
+}
+
+.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
