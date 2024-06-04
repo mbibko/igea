@@ -11,12 +11,24 @@ import "swiper/css/pagination";
 const swiper = new Swiper(".swiper", {
   // configure Swiper to use modules
   modules: [Pagination, Autoplay],
-  autoplay: {
-    delay: 7500
-  },
+  // autoplay: {
+  //   delay: 7500
+  // },
   speed: 500,
-  slidesPerView: 4,
-  spaceBetween: 40,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1700: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
   pagination: {
     el: ".swiper-pagination",
     type: "bullets"

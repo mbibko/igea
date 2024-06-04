@@ -9,19 +9,22 @@ body {
    font-style: normal;
  }
 
-.items-with-border > div::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 1px;
-  height: 80%;
-  top: 10%;
-  left: 0;
-  background-color: #bebebe;
+@layer utilities {
+    .items-with-border > *::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 80%;
+      top: 10%;
+      left: 0;
+      background-color: #bebebe;
+    }
+    .items-with-border > *:first-child::before {
+      display: none;
+    }
 }
-.items-with-border > div:first-child::before {
-  display: none;
-}
+
 
 .icon {
   background-size: contain;
