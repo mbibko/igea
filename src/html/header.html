@@ -1,41 +1,61 @@
 <div class="container">
-  <header class="flex gap-x-8 py-4 lg:h-40 items-center justify-between">
-    <div>
-      <a href="/" class="block h-[40px] w-[100px] lg:h-[71px] lg:w-[175px] bg-[url('/img/logo.png')] bg-cover"></a>
-    </div>
-    <div class="flex items-center">
-      <div class="hidden 2xl:flex">
+  <header class="flex items-center justify-between gap-x-8 py-4 lg:h-24">
+    <div class="flex h-16">
+      <div>
+        <a href="#" class="block h-full"
+          ><span class="sr-only">Igea</span
+          ><img class="h-full" src="/img/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="hidden items-center py-2 2xl:flex">
         <div
-          class="mx-4 h-[50px] w-[26px] bg-[url('/img/separator.png')] bg-cover"
+          class="h-full w-[50px] bg-[url('/img/separator.png')] bg-contain bg-center bg-no-repeat"
         ></div>
-        <div class="icon size-[58px] bg-[url('/img/book-cap.png')]"></div>
         <div
-          class="icon ml-3 h-[54px] w-[300px] bg-[url('/img/catalogo-universita.png')]"
+          class="icon aspect-square h-full bg-[url('/img/book-cap.png')]"
+        ></div>
+        <div
+          class="icon ml-3 h-full w-[300px] bg-[url('/img/catalogo-universita.png')]"
         ></div>
       </div>
     </div>
-    <div class="flex gap-12 items-center">
-      <menu class="hidden lg:flex lg:gap-x-12 text-2xl font-medium text-gray-500">
-        <li class="tracking-tight">
+    <div class="flex items-center gap-12">
+      <menu
+        class="hidden text-xl font-medium text-gray-500 lg:flex lg:gap-x-12 [&_li]:tracking-tight"
+      >
+        <li>
           <a href="#">CORSI DI LAUREA ON-LINE</a>
         </li>
-        <li class="tracking-tight"><a href="#">MASTER ON-LINE</a></li>
-        <li class="tracking-tight">
+        <li><a href="#">MASTER ON-LINE</a></li>
+        <li>
           <a href="#">ALTRI CORSI IGEA</a>
         </li>
       </menu>
       <a
         href="#"
-        class="hidden lg:block icon size-[44px] bg-[url('/img/messendger.png')]"
+        class="icon hidden size-[38px] bg-[url('/img/messendger.png')] lg:block"
       ></a>
     </div>
     <div class="flex lg:hidden">
-      <button onclick="document.getElementById('mobile-nav').classList.toggle('hidden');" type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+      <button
+        onclick="document.getElementById('mobile-nav').classList.toggle('hidden');"
+        type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+      >
         <span class="sr-only">Open main menu</span>
-        <svg class="size-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-             aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        <svg
+          class="size-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
         </svg>
       </button>
     </div>

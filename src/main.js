@@ -24,13 +24,13 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 3,
       spaceBetween: 30,
     },
-    1700: {
+    1600: {
       slidesPerView: 4,
       spaceBetween: 40,
     },
   },
   pagination: {
     el: ".swiper-pagination",
-    type: "bullets"
-  }
+    type: "bullets",
+  },
 });
