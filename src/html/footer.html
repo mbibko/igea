@@ -1,15 +1,17 @@
 <footer class="bg-neutral-700">
-  <div class="container py-24 flex">
-    <div class="mr-32">
-      <img class="mb-12 block" src="/img/logo-white.png" alt="" />
-      <img class="mb-12 block" src="/img/catalogo-universita-white.png" alt="" />
-      {% include "src/html/socials.html" %}
-    </div>
-    <div class="flex">
-      <div class="mr-20">
-        <img width="180" class="" src="/img/award-2022.png" alt="" />
+  <div class="container py-12 lg:py-24 flex flex-col lg:flex-row">
+    <div class="lg:flex">
+      <div class="lg:mr-20 mb-12">
+        <img width="180" class="block mx-auto" src="/img/award-2022.png" alt="" />
       </div>
       {% include "src/html/footer-nav.html" %}
+    </div>
+    <div class="lg:mr-16 xl:mr-32 lg:-order-1">
+      <div class="grid grid-cols-2 lg:block">
+        <img class="mb-12 block" src="/img/logo-white.png" alt="" />
+        <img class="mb-12 block" src="/img/catalogo-universita-white.png" alt="" />
+      </div>
+      {% include "src/html/socials.html" %}
     </div>
   </div>
 </footer>

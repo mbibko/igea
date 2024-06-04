@@ -1,33 +1,44 @@
 <div class="container">
-  <header class="flex h-40 items-center justify-between">
-    <div class="flex items-center">
-      <a href="/"
-        ><div
-          class="h-[71px] w-[175px] bg-[url('/img/logo.png')] bg-cover"
-        ></div
-      ></a>
-      <div
-        class="mx-4 h-[50px] w-[26px] bg-[url('/img/separator.png')] bg-cover"
-      ></div>
-      <div class="icon size-[58px] bg-[url('/img/book-cap.png')]"></div>
-      <div
-        class="icon ml-3 h-[54px] w-[300px] bg-[url('/img/catalogo-universita.png')]"
-      ></div>
+  <header class="flex gap-x-8 py-4 lg:h-40 items-center justify-between">
+    <div>
+      <a href="/" class="block h-[40px] w-[100px] lg:h-[71px] lg:w-[175px] bg-[url('/img/logo.png')] bg-cover"></a>
     </div>
     <div class="flex items-center">
-      <menu class="flex text-2xl font-medium text-gray-500">
-        <li class="mr-14 tracking-tight">
+      <div class="hidden 2xl:flex">
+        <div
+          class="mx-4 h-[50px] w-[26px] bg-[url('/img/separator.png')] bg-cover"
+        ></div>
+        <div class="icon size-[58px] bg-[url('/img/book-cap.png')]"></div>
+        <div
+          class="icon ml-3 h-[54px] w-[300px] bg-[url('/img/catalogo-universita.png')]"
+        ></div>
+      </div>
+    </div>
+    <div class="flex gap-12 items-center">
+      <menu class="hidden lg:flex lg:gap-x-12 text-2xl font-medium text-gray-500">
+        <li class="tracking-tight">
           <a href="#">CORSI DI LAUREA ON-LINE</a>
         </li>
-        <li class="mr-14 tracking-tight"><a href="#">MASTER ON-LINE</a></li>
-        <li class="mr-14 tracking-tight">
+        <li class="tracking-tight"><a href="#">MASTER ON-LINE</a></li>
+        <li class="tracking-tight">
           <a href="#">ALTRI CORSI IGEA</a>
         </li>
       </menu>
       <a
         href="#"
-        class="icon block size-[44px] bg-[url('/img/messendger.png')]"
+        class="hidden lg:block icon size-[44px] bg-[url('/img/messendger.png')]"
       ></a>
     </div>
+    <div class="flex lg:hidden">
+      <button onclick="document.getElementById('mobile-nav').classList.toggle('hidden');" type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <span class="sr-only">Open main menu</span>
+        <svg class="size-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+             aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    {% include "src/html/mobile-menu.html" %}
   </header>
 </div>
