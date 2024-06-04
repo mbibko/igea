@@ -1,16 +1,17 @@
 <section
-  class="flex flex-col justify-center bg-[url('/img/hero-1.png')] bg-cover bg-center py-20 lg:h-[813px] lg:py-0"
+  style="height: calc(100svh - 80px)"
+  class="flex max-h-[500px] min-h-[550px] flex-col justify-center bg-[url('/img/hero-1.png')] bg-cover bg-center pt-20 lg:max-h-[800px] lg:min-h-[680px]"
 >
-  <div class="container max-w-[800px]">
+  <div class="container">
     <h1
-      class="mx-auto mb-14 max-w-screen-md text-center text-3xl font-light text-white lg:mb-20 lg:text-5xl"
+      class="mx-auto mb-14 max-w-screen-lg text-center text-3xl font-light leading-normal text-white lg:mb-20 lg:text-[2.8rem] lg:leading-normal"
     >
       La migliore
       <span class="font-semibold">formazione universitaria on-line</span>
-      con la chiarezza e l’affidabilità
+      con&nbsp;la chiarezza e l’affidabilità
       <span class="font-semibold">IGEA</span>
     </h1>
-    <form action="/">
+    <form action="/" class="mx-auto max-w-[800px]">
       <label for="search-field" class="sr-only"
         >Cerca il tuo corso di laruera on-line</label
       >
@@ -20,20 +21,18 @@
           name="search"
           type="search"
           required
-          class="block w-full rounded-xl border-0 bg-white px-6 py-5 shadow-md ring-1 ring-inset ring-white/10 placeholder:text-slate-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 xl:text-2xl"
+          class="block w-full rounded-xl border-0 bg-white px-3 py-5 shadow-md ring-1 ring-inset ring-white/10 placeholder:text-slate-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 lg:px-6 xl:text-2xl"
           placeholder="Cerca il tuo corso di laruera on-line"
         />
         <button
           title="Cerca"
           type="submit"
-          class="absolute right-5 top-1/2 -translate-y-1/2"
+          class="absolute right-3 top-1/2 -translate-y-1/2 lg:right-5"
         >
           <svg
-            class="size-8 fill-red-600"
+            class="size-5 fill-red-600 lg:size-8"
             xmlns="http://www.w3.org/2000/svg"
             xml:space="preserve"
-            width="800"
-            height="800"
             viewBox="0 0 488.4 488.4"
           >
             <path
