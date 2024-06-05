@@ -1,0 +1,89 @@
+<table class="catalog-table w-full text-left">
+  <thead>
+    <tr>
+      {% for item in ["ATENEO",
+      "FACOLTA’","CORSO","LAUREA","CLASSE","RETTA","CFU", ""] %}
+      <th>{{item}}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in [1,2,3,4,5,6,7,8,9,10] %}
+    <tr>
+      <td data-title="ATENEO" class="font-semibold">Unimercatorum</td>
+      <td data-title="FACOLTA’">Psicologia</td>
+      <td data-title="CORSO">
+        <a class="link font-semibold" href="#"
+          >Corso di Laurea Online in Scienze e Tecniche Psicologiche</a
+        >
+      </td>
+      <td data-title="LAUREA">Triennale</td>
+      <td data-title="CLASSE">L-24</td>
+      <td data-title="RETTA">€&nbsp;2.500</td>
+      <td data-title="CFU">180</td>
+      <td data-title="">
+        <a href="#">
+          <svg
+            class="size-6 fill-slate-600"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="mt-10 flex justify-between border-t text-slate-500">
+  <a href="#" class="link flex gap-4 py-4">
+    <svg
+      class="size-6"
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+      />
+    </svg>
+    Previous
+  </a>
+  <div
+    class="mx-auto -mt-[2px] hidden *:border-t-2 *:px-6 *:py-4 md:flex [&_a:hover]:border-sky-300"
+  >
+    <a class="" href="#">1</a>
+    <a class="border-sky-600" href="#">2</a>
+    <a class="" href="#">3</a>
+    <span class="">...</span>
+    <a class="" href="#">8</a>
+    <a class="" href="#">9</a>
+    <a class="" href="#">10</a>
+  </div>
+  <a href="#" class="link flex gap-4 py-4">
+    Next
+    <svg
+      class="size-6"
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+      />
+    </svg>
+  </a>
+</div>

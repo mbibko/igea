@@ -1,0 +1,93 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+body
+  font-family: "Bitter", serif
+  font-optical-sizing: auto
+  font-weight: 400
+  font-style: normal
+
+
+@layer utilities
+  .items-with-border > *::before
+    position: absolute
+    content: ""
+    display: block
+    width: 1px
+    height: 60%
+    top: 20%
+    left: 0
+    background-color: #bebebe
+  .items-with-border > *:first-child::before
+    display: none
+
+.icon
+  background-size: contain
+  background-repeat: no-repeat
+
+
+table.catalog-table
+  --border-radius: 10px
+  border-collapse: separate
+  border-spacing: 0 20px
+
+  thead tr th
+    @apply px-6 md:px-4 xl:px-8
+
+  tbody tr
+    @apply shadow-md py-6 mb-6
+    border-radius: var(--border-radius)
+    background: linear-gradient(to right, #e6eefa, #fff)
+    td
+      @apply px-6 md:px-4 xl:px-8 py-2 lg:py-7
+      &:first-child
+        border-radius: var(--border-radius) 0 0 var(--border-radius)
+      &:last-child
+        border-radius: 0 var(--border-radius) var(--border-radius) 0
+
+
+@media (max-width: 1024px)
+  table.catalog-table
+    @apply block
+
+    thead,
+    tbody
+      @apply block
+
+    thead tr
+      @apply hidden
+      th
+        @apply px-8 hidden
+
+    tbody tr
+      @apply flex relative flex-wrap py-6 mb-6
+
+    tbody tr td
+      @apply flex flex-col
+
+      &::before
+        content: attr(data-title)
+        @apply block font-medium text-sm
+
+      &:first-child
+        @apply w-1/2 order-1 border-b rounded-none
+
+      &:nth-child(2)
+        @apply w-1/2 text-right order-2 border-b
+
+      &:nth-child(3)
+        @apply w-full border-b order-3 py-8 pr-20 mb-6
+        &::before
+          content: none
+
+      &:nth-child(n + 4)
+        @apply py-0 flex-row gap-3 w-1/2 order-last items-center
+
+      &:last-child
+        @apply absolute top-28 right-2 rounded-none w-20
+
+.link
+  color: #28599f
+  &:hover
+    text-decoration: underline

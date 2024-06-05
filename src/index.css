@@ -1,32 +1,117 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
 
-body {
-   font-family: "Bitter", serif;
-   font-optical-sizing: auto;
-   font-weight: 400;
-   font-style: normal;
- }
+/*body {*/
+/*   font-family: "Bitter", serif;*/
+/*   font-optical-sizing: auto;*/
+/*   font-weight: 400;*/
+/*   font-style: normal;*/
+/* }*/
 
-@layer utilities {
-    .items-with-border > *::before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 1px;
-      height: 60%;
-      top: 20%;
-      left: 0;
-      background-color: #bebebe;
-    }
-    .items-with-border > *:first-child::before {
-      display: none;
-    }
-}
+/*@layer utilities {*/
+/*    .items-with-border > *::before {*/
+/*      position: absolute;*/
+/*      content: "";*/
+/*      display: block;*/
+/*      width: 1px;*/
+/*      height: 60%;*/
+/*      top: 20%;*/
+/*      left: 0;*/
+/*      background-color: #bebebe;*/
+/*    }*/
+/*    .items-with-border > *:first-child::before {*/
+/*      display: none;*/
+/*    }*/
+/*}*/
 
 
-.icon {
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+/*.icon {*/
+/*  background-size: contain;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+
+/*table.catalog-table {*/
+/*    --border-radius: 10px;*/
+/*    border-collapse: separate;*/
+/*    border-spacing: 0 20px;*/
+/*}*/
+/*table.catalog-table thead,*/
+/*table.catalog-table tbody {}*/
+
+/*table.catalog-table thead tr {}*/
+
+/*table.catalog-table tbody tr {*/
+/*    @apply shadow-lg py-6 mb-6;*/
+/*    border-radius: var(--border-radius);*/
+/*    background: linear-gradient(to right, #e6eefa, #fff);*/
+/*}*/
+/*table.catalog-table thead tr th {*/
+/*    @apply px-8;*/
+/*}*/
+/*table.catalog-table tbody tr td {*/
+/*    @apply px-8 py-2 lg:py-7;*/
+/*}*/
+/*table.catalog-table tbody tr td:first-child {*/
+/*    border-radius: var(--border-radius) 0 0 var(--border-radius);*/
+/*}*/
+/*body table.catalog-table tbody tr td:last-child {*/
+/*    border-radius: 0 var(--border-radius) var(--border-radius) 0;*/
+/*}*/
+
+
+
+/*@media (max-width: 768px) {*/
+/*    table.catalog-table {*/
+/*        @apply block;*/
+/*    }*/
+/*    table.catalog-table thead,*/
+/*    table.catalog-table tbody {*/
+/*        @apply block;*/
+/*    }*/
+
+/*    table.catalog-table thead tr {*/
+/*        @apply hidden;*/
+/*    }*/
+
+/*    table.catalog-table tbody tr {*/
+/*        @apply shadow-lg flex relative flex-wrap py-6 mb-6;*/
+/*    }*/
+/*    table.catalog-table thead tr th {*/
+/*        @apply px-8 hidden;*/
+/*    }*/
+/*    table.catalog-table tbody tr td {*/
+/*        @apply px-8 py-2 flex flex-col;*/
+/*    }*/
+/*    table.catalog-table tbody tr td::before {*/
+/*        content: attr(data-title);*/
+/*        @apply block font-medium;*/
+/*    }*/
+
+/*    table.catalog-table tbody tr td:first-child {*/
+/*        @apply w-1/2 order-1 border-b rounded-none;*/
+/*    }*/
+/*    table.catalog-table tbody tr td:nth-child(2) {*/
+/*        @apply w-1/2 text-right order-2 border-b;*/
+/*    }*/
+/*    table.catalog-table tbody tr td:nth-child(3) {*/
+/*        @apply border-b order-3 py-8 pr-20 mb-6;*/
+/*    }*/
+/*    table.catalog-table tbody tr td:nth-child(3)::before {*/
+/*        content: none;*/
+/*    }*/
+/*    table.catalog-table tbody tr td:nth-child(n + 4) {*/
+/*        @apply py-0 flex-row gap-3 w-1/2 order-last;*/
+/*    }*/
+
+/*    body table.catalog-table tbody tr td:last-child {*/
+/*        @apply absolute top-32 right-6 rounded-none border-0 w-1/5;*/
+/*    }*/
+/*}*/
+
+/*.link {*/
+/*    color: #28599f;*/
+/*}*/
+/*.link:hover {*/
+/*    text-decoration: underline;*/
+/*}*/

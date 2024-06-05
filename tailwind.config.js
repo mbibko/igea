@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: "2rem",
       screens: {
         "2xl": "1616px", // Adjust as needed for extra extra large screens
       },
@@ -14,5 +14,6 @@ module.exports = {
   },
   plugins: [
     // require('@tailwindcss/typography')
+    require("@tailwindcss/forms"),
   ],
 };

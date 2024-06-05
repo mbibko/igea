@@ -1,0 +1,29 @@
+{% extends "src/html/layout.html" %} {% import "src/html/form-elements.html" as
+forms %} {% block content %}
+
+<div class="bg-[url('/img/title-bg-1.jpg')] bg-cover bg-center">
+  <div class="container flex py-8 lg:h-52 lg:items-end lg:py-16">
+    <h1 class="text-5xl font-bold text-white">Corsi di Laurea</h1>
+  </div>
+</div>
+
+<div class="container py-10">
+  {% include "src/html/form-search-course.html" %}
+  <div class="mb-6 md:flex lg:mb-8">
+    <div class="mb-10 flex-none md:mr-16 md:w-48 lg:w-52">
+      <img class="mx-auto" src="/img/mercatorum.png" alt="" />
+    </div>
+    <div class="max-w-[900px]">
+      <h2 class="mb-6 text-2xl font-bold">Università Mercatorum</h2>
+      <p>
+        La prima Startup University tutta italiana, caratterizzata da diversi
+        percorsi accademici, tutti all’insegna dell’innovazione. Si tratta della
+        prima partnership pubblico-privata per la governance di un’istituzione
+        universitaria, che nasce con l’obiettivo di assumere la leadership nella
+        formazione delle imprese.
+      </p>
+    </div>
+  </div>
+  {% include "src/html/table-courses.html" %}
+</div>
+{% endblock %}

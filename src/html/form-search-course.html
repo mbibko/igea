@@ -1,0 +1,43 @@
+<form
+  action="/"
+  class="mb-16 flex flex-wrap gap-x-4 gap-y-2 lg:w-4/5 xl:w-full xl:flex-nowrap"
+>
+  <div class="w-64 md:flex-1">
+    {% call forms.label("Ateneo") -%} {{forms.select()}} {%- endcall %}
+  </div>
+
+  <div class="w-64 md:flex-1">
+    {% call forms.label("Facoltà:") -%} {{forms.select()}} {%- endcall %}
+  </div>
+  <div class="w-64 md:flex-1">
+    {% call forms.label("Laurea:") -%} {{forms.select()}} {%- endcall %}
+  </div>
+  <div class="-my-4 w-full xl:hidden"></div>
+  <div class="w-36 flex-none">
+    {% call forms.label("Classe:") -%} {{forms.select()}} {%- endcall %}
+  </div>
+  <div class="w-36 flex-none">
+    {% call forms.label("CFU:") -%}
+    <div class="flex gap-1">
+      <div class="flex-1">{{forms.select()}}</div>
+      <div class="flex-1">{{forms.select()}}</div>
+    </div>
+    {%- endcall %}
+  </div>
+  <div class="w-36 flex-none">
+    {% call forms.label("Retta:") -%}
+    <div class="flex gap-1">
+      <div class="flex-1">{{forms.select()}}</div>
+      <div class="flex-1">{{forms.select()}}</div>
+    </div>
+    {%- endcall %}
+  </div>
+  <div class="mt-7 flex-none">
+    <button
+      type="submit"
+      class="rounded-lg bg-sky-600 px-8 py-2.5 text-sm font-medium text-white hover:bg-blue-900 focus:outline-none focus:ring-4 focus:ring-blue-300"
+    >
+      Cerca
+    </button>
+  </div>
+</form>

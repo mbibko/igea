@@ -1,4 +1,5 @@
-import "./index.css";
+// import "./index.css";
+import "./index.sass";
 
 // core version + navigation, pagination modules:
 import Swiper from "swiper";
