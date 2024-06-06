@@ -1,5 +1,6 @@
 // import "./index.css";
 import "./index.sass";
+import "virtual:svg-icons-register";
 
 // core version + navigation, pagination modules:
 import Swiper from "swiper";

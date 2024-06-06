@@ -1,0 +1,107 @@
+{% extends "src/html/layout.html" %} {% block content %} {% include
+"src/html/page-title-with-bg.html" %}
+
+<div class="container">
+  <div class="mb-10 text-xl font-bold text-sky-700">Triennale - 120 CFU</div>
+  <div class="mb-10 lg:mb-20">
+    <img
+      class="mx-auto mb-10 lg:float-right"
+      src="/img/mercatorum.png"
+      alt=""
+    />
+    <h2 class="mb-8 text-2xl font-medium lg:w-3/5 lg:text-3xl">
+      Corso di Laurea Online in Scienze Psicologiche delle Risorse Umane, delle
+      Organizzazioni e delle Imprese
+    </h2>
+    <hr class="mb-10 border-t-2 lg:w-2/5" />
+  </div>
+  <div class="flex flex-col gap-10 xl:flex-row">
+    <div class="flex-none xl:w-96">
+      <div
+        class="grid grid-cols-2 gap-2 max-xl:text-sm sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 xl:grid-cols-2 xl:gap-4"
+      >
+        {% for item in ["university-svgrepo-com", "signpost-2", "mortarboard",
+        "award-star-ui-svgrepo-com","patch-check",
+        "pencil-square","hourglass-split", "hand-payment-icon" ] %}
+        <div
+          class="flex flex-col items-center justify-center rounded-xl border-2 p-2 md:p-4 xl:aspect-video"
+        >
+          <svg class="mb-2 size-8 text-sky-700 lg:mb-4 xl:size-10">
+            <use xlink:href="#icon-{{item}}" />
+          </svg>
+          <span class="font-bold">UNIVERSITA</span>
+          <span>Sempre Aperte</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="prose mb-10">
+        <p>
+          Il Corso di Laurea Online in Scienze Psicologiche delle Risorse Umane,
+          delle Organizzazioni e delle Imprese [IUL] mira a sviluppare
+          competenze professionalizzanti fornendo, da una parte, una solida base
+          metodologica per gli studenti che intendono proseguire nella laurea
+          magistrale, dall’altra, consente l’apprendimento delle conoscenze e
+          delle competenze utili per affrontare le situazioni tipiche della
+          psicologia individuale, sociale e del lavoro.
+        </p>
+        <p class="font-medium">Obiettivi Formativi</p>
+        <p>
+          I contenuti previsti dal Corso di Laurea Online in Scienze
+          Psicologiche delle Risorse Umane, delle Organizzazioni e delle Imprese
+          [IUL] sono in grado di configurare da un lato una sorta di scaffolding
+          cognitivo e meta-cognitivo, dall’altro l’apprendimento di competenze
+          trasversali in grado di consentire ai giovani un accesso più
+          consapevole all’interno del mercato del lavoro.
+        </p>
+
+        <p class="font-medium">Questi includono:</p>
+        <ul>
+          <li>le conoscenze di base dei diversi settori della psicologia;</li>
+          <li>il benessere e la valorizzazione della persona;</li>
+          <li>
+            la formazione psicologica nelle organizzazioni e negli ambienti di
+            lavoro;
+          </li>
+          <li>la selezione e valutazione del personale;</li>
+          <li>le dinamiche all’interno dei gruppi sociali;</li>
+          <li>il conflitto e la cooperazione tra gruppi;</li>
+          <li>la formazione e l’inclusione negli ambienti lavorativi;</li>
+          <li>
+            l’utilizzo di strumenti psicosociali nell’analisi demoscopica e
+            nell’ambito della metodologia della ricerca-azione;
+          </li>
+          <li>
+            la formazione sugli atteggiamenti e le determinanti del
+            comportamento sociale.
+          </li>
+        </ul>
+        <p>
+          Il percorso formativo comprende tutti i settori della psicologia con
+          una particolare rilevanza riservata ai temi specifici della psicologia
+          sociale e del lavoro, con attenzione ad aspetti teorici, metodologici
+          ed applicativi. Una particolare attenzione sarà rivolta al tema
+          dell’Inclusione delle persone appartenenti a culture diverse nei
+          luoghi di lavoro.
+        </p>
+      </div>
+      <div
+        class="max-xl:-mx-container max-xl:px-container bg-sky-100 py-10 xl:py-16"
+      >
+        <div class="mx-auto lg:w-3/5">
+          <h2
+            class="mb-10 text-center text-xl font-bold text-sky-700 lg:text-3xl"
+          >
+            Compila il modulo per ricevere una consulenza gratuita e il piano di
+            studi:
+          </h2>
+          <div class="mx-auto lg:w-3/5">
+            {% include "src/html/forms/form-contact.html" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
