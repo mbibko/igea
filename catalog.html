@@ -1,23 +1,25 @@
-{% extends "src/html/layout.html" %} {% block content %} {% include
-"src/html/page-title-with-bg.html" %}
+{% extends "src/html/layout.html" %}
 
-<div class="container py-10">
-  {% include "src/html/forms/form-search-course.html" %}
-  <div class="mb-6 md:flex lg:mb-8">
-    <div class="mb-10 flex-none md:mr-16 md:w-48 lg:w-52">
-      <img class="mx-auto" src="/img/mercatorum.png" alt="" />
+{% block content %}
+  {% include"src/html/page-title-with-bg.html" %}
+
+  <div class="container py-10">
+    {% include "src/html/forms/form-search-course.html" %}
+    <div class="mb-6 md:flex lg:mb-8">
+      <div class="mb-10 flex-none md:mr-16 md:w-48 lg:w-52">
+        <img class="mx-auto" src="/img/mercatorum.png" alt="" />
+      </div>
+      <div class="max-w-[900px]">
+        <h2 class="mb-6 text-2xl font-bold">Università Mercatorum</h2>
+        <p>
+          La prima Startup University tutta italiana, caratterizzata da diversi
+          percorsi accademici, tutti all’insegna dell’innovazione. Si tratta
+          della prima partnership pubblico-privata per la governance di
+          un’istituzione universitaria, che nasce con l’obiettivo di assumere la
+          leadership nella formazione delle imprese.
+        </p>
+      </div>
     </div>
-    <div class="max-w-[900px]">
-      <h2 class="mb-6 text-2xl font-bold">Università Mercatorum</h2>
-      <p>
-        La prima Startup University tutta italiana, caratterizzata da diversi
-        percorsi accademici, tutti all’insegna dell’innovazione. Si tratta della
-        prima partnership pubblico-privata per la governance di un’istituzione
-        universitaria, che nasce con l’obiettivo di assumere la leadership nella
-        formazione delle imprese.
-      </p>
-    </div>
+    {% include "src/html/table-courses.html" %}
   </div>
-  {% include "src/html/table-courses.html" %}
-</div>
 {% endblock %}

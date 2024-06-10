@@ -1,43 +1,45 @@
 <table class="catalog-table w-full text-left">
   <thead>
     <tr>
-      {% for item in ["ATENEO",
-      "FACOLTA’","CORSO","LAUREA","CLASSE","RETTA","CFU", ""] %}
-      <th>{{item}}</th>
+      {%
+        for item in ["ATENEO",
+        "FACOLTA’","CORSO","LAUREA","CLASSE","RETTA","CFU", ""]
+      %}
+        <th>{{ item }}</th>
       {% endfor %}
     </tr>
   </thead>
   <tbody>
     {% for item in [1,2,3,4,5,6,7,8,9,10] %}
-    <tr>
-      <td data-title="ATENEO" class="font-semibold">Unimercatorum</td>
-      <td data-title="FACOLTA’">Psicologia</td>
-      <td data-title="CORSO">
-        <a class="link font-semibold" href="#"
-          >Corso di Laurea Online in Scienze e Tecniche Psicologiche</a
-        >
-      </td>
-      <td data-title="LAUREA">Triennale</td>
-      <td data-title="CLASSE">L-24</td>
-      <td data-title="RETTA">€&nbsp;2.500</td>
-      <td data-title="CFU">180</td>
-      <td data-title="">
-        <a href="#">
-          <svg
-            class="size-6 fill-slate-600"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            viewBox="0 0 16 16"
+      <tr>
+        <td data-title="ATENEO" class="font-semibold">Unimercatorum</td>
+        <td data-title="FACOLTA’">Psicologia</td>
+        <td data-title="CORSO">
+          <a class="link font-semibold" href="#"
+            >Corso di Laurea Online in Scienze e Tecniche Psicologiche</a
           >
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-            />
-          </svg>
-        </a>
-      </td>
-    </tr>
+        </td>
+        <td data-title="LAUREA">Triennale</td>
+        <td data-title="CLASSE">L-24</td>
+        <td data-title="RETTA">€&nbsp;2.500</td>
+        <td data-title="CFU">180</td>
+        <td data-title="">
+          <a href="#">
+            <svg
+              class="size-6 fill-slate-600"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </a>
+        </td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>
